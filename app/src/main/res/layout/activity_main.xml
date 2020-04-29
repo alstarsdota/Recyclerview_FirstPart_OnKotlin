@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/Action"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <ImageView
+            android:src="@drawable/inst"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="140dp"
+            android:layout_height="40dp"/>
+        <ImageView
+            android:src="@drawable/ic_tv_black_24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+        <ImageView
+            android:src="@drawable/send"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="12dp"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/Action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:scrollbarStyle="insideOverlay"
+            android:layout_height="90dp">
+
+            <LinearLayout
+                android:id="@+id/rel_lay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle1"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/lal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Lakers-1"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle2"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/cb"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Chicago's-1"
+                        app:layout_constraintTop_toBottomOf="@id/circle2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle3"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/lal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Lakers-2"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle4"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/gsw"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Warriors-1"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle5"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/lal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Lakers-3"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle6"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/cb"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Chicago's-2"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="75dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle7"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/mh"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Miami-1"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle7"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="70dp"
+                    android:layout_height="90dp"
+                    android:layout_marginRight="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circle8"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/gradient1"
+                        android:src="@drawable/cb"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="75dp"
+                        android:layout_height="20dp"
+                        android:text="Chicago'-3"
+                        android:gravity="center"
+                        app:layout_constraintTop_toBottomOf="@id/circle8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_below="@id/hsv"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
